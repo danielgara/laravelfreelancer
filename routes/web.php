@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name("home.index");
+Route::get('/admin/index', 'Admin\AdminHomeController@index')->name("admin.home.index");
+Auth::routes();
